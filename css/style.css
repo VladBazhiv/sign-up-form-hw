@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Andada+Pro:wght@800&family=Inter:wght@400;500;600&family=Roboto:wght@300;400;500;700&display=swap");
+
+:root {
+  --primary-clr: rgba(64, 82, 130, 1);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+html {
+  font: 24px/1.5 "Inter", sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #fff;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+/* Globals */
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.primary-tc {
+  color: var(--primary-clr);
+}
+
+.primary-bgc {
+  background-color: var(--primary-clr);
+}
+
+/* Sign Up Body */
+
+.sign-up {
+  min-height: 100vh;
+  display: flex;
+}
+
+/* Form */
+
+.sign-up .sign-up-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-basis: 60%;
+  text-align: center;
+}
+
+.sign-up .sign-up-form .title {
+  margin-bottom: 2em;
+  font-size: 36px;
+  font-weight: 600;
+}
+
+.sign-up .sign-up-form form {
+  max-width: 60%;
+}
+
+.sign-up .sign-up-form form input:not([type="checkbox"]) {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.1rem;
+  font-size: inherit;
+}
+
+.sign-up .sign-up-form .terms-checkbox {
+  display: flex;
+  gap: 1.3em;
+  align-items: center;
+  margin-bottom: 1.1rem;
+  text-align: left;
+}
+.sign-up .sign-up-form .terms-checkbox input {
+  transform: scale(2);
+}
+.sign-up .sign-up-form .terms-checkbox label a {
+  text-decoration: none;
+  color: lightskyblue;
+  font-weight: bolder;
+}
+
+.sign-up .sign-up-form form input:not([type="checkbox"], [type="submit"]) {
+  padding: 0.4em 0.7em;
+  border: none;
+  border-bottom: 2px solid gray;
+}
+
+.sign-up .sign-up-form form input:focus:not([type="checkbox"], [type="submit"]) {
+  outline: none;
+  border-bottom: 2px solid var(--primary-clr);
+}
+
+.sign-up .sign-up-form form .button {
+  width: 100%;
+  padding-block: 0.4em;
+  font-size: 36px;
+  font-weight: 500;
+  color: white;
+  border: none;
+  border-radius: 20px;
+}
+.sign-up .sign-up-form form .button:active {
+  transform: scale(.95);
+}
+
+/* Image */
+
+.sign-up .image {
+  flex-basis: 40%;
+  min-height: 100%;
+  background: url("../images/main-image.png") center right/cover;
+}
